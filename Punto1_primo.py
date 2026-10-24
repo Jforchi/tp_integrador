@@ -7,11 +7,14 @@ def es_primo(numero):
         if numero % i == 0:  #Si la división es exacta, no es primo.
             primo = False
     return primo 
+texto = input("Ingrese un número: ")       
 
-numero = int(input("Numero a verificar: "))
-print("Numero ingresado", numero)
-
-if es_primo(numero):
-    print ("es nro. primo")
+if texto.isdigit():  
+    numero = int(texto)
+    print("Numero ingresado", numero)
+    if es_primo(numero):
+        print ("es nro. primo")
+    else:
+        print ("No es nro. primo")
 else:
-    print ("No es nro. primo")
+        print ("Error: Ingrese numero entero positivo")

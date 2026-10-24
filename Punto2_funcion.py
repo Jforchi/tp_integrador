@@ -27,10 +27,15 @@ def raices(a, b, c):
         return []
     
 
-
-a = float(input("Ingrese el valor de a: "))
-b = float(input("Ingrese el valor de b: "))
-c = float(input("Ingrese el valor de c: "))
-
-resultado = raices(a, b, c)
-print("Las raíces son:", resultado)
+try:
+    a = float(input("Ingrese el valor de a: "))
+    b = float(input("Ingrese el valor de b: "))
+    c = float(input("Ingrese el valor de c: "))
+    if a == 0:
+        print("Error: a no puede ser 0")
+    else:   
+        resultado = raices(a, b, c)
+        print("Las raíces son:", resultado)
+    
+except ValueError:                                    
+    print("Error: debe ingresar valores numéricos")
