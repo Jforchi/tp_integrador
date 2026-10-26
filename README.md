@@ -1,15 +1,15 @@
 TP INTEGRADOR 
-Diplomatura en QA - UNTREF
+Módulo 3
 Autora: Julieta Forciniti
 
 #Contenido
 
-'Punto1_primo.py'
-'Punto2_funcion.py'
-'test_apiPunto32.py'
-'test_sauce.py'
-'reporte.html'
-'Tp_Integrador_ForcinitiJulieta.mp4'
+-'Punto1_primo.py'
+-'Punto2_funcion.py'
+-'test_apiPunto32.py'
+-'test_sauce.py'
+-'reporte.html'
+-'Tp_Integrador_ForcinitiJulieta.mp4'
 
  #Requerimientos
 
