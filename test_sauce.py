@@ -17,7 +17,7 @@ def test_sauce_Lohi():
     elemento = driver.find_element(By.CLASS_NAME, "product_sort_container")
     desplegable = Select(elemento)
     desplegable.select_by_value("lohi") #Lohi --> low to high 
-
+    time.sleep(3)
     precios = driver.find_elements(By.CLASS_NAME, "inventory_item_price")
 
     #devuelve los precios de menor a mayor pero en formato texto
@@ -64,6 +64,7 @@ def test_sauce_checkout():
         driver.find_element(By.ID, "continue").click()
         mensaje = driver.find_element(By.CLASS_NAME, "error-message-container").text
         assert mensaje == "Error: Postal Code is required"
+   
         
         
     
